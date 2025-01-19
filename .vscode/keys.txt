@@ -1,0 +1,7 @@
+B -> Send
+H -> Hide
+O -> Config Folder
+N -> Network 
+K -> Reload Config
+L -> Empty History
+Q -> Exit
