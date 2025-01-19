@@ -106,7 +106,17 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
   \*********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.App = void 0;\nconst jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nclass App extends React.Component {\n    constructor(props) {\n        super(props);\n        this.state = {};\n    }\n    render() {\n        return (0, jsx_runtime_1.jsxs)(\"div\", { children: [(0, jsx_runtime_1.jsx)(\"h1\", { children: \"Web development Exam\" }), (0, jsx_runtime_1.jsx)(\"p\", { children: \"You can use this component to test your code. Place your own components inside the render of the App component.\" })] });\n    }\n}\nexports.App = App;\n\n\n//# sourceURL=webpack://webdev-exam/./src/App.tsx?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.App = void 0;\nconst jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst ExamPart1_1 = __webpack_require__(/*! ./ExamPart1 */ \"./src/ExamPart1.tsx\");\nclass App extends React.Component {\n    constructor(props) {\n        super(props);\n        this.state = {};\n    }\n    render() {\n        const student = {\n            id: \"1234\",\n            name: \"Peter Poep\",\n            role: \"student\",\n            grade: 10\n        };\n        const teacher = {\n            id: \"1234\",\n            name: \"Leraar Poep\",\n            role: \"teacher\",\n            subject: \"Biology\"\n        };\n        const staff = {\n            id: \"1234\",\n            name: \"Staff Poep\",\n            role: \"staff\",\n            department: \"Tech support\"\n        };\n        return (0, jsx_runtime_1.jsxs)(\"div\", { children: [(0, jsx_runtime_1.jsx)(\"h1\", { children: \"Web development Exam\" }), (0, jsx_runtime_1.jsxs)(\"p\", { children: [(0, jsx_runtime_1.jsx)(ExamPart1_1.PersonCard, { person: student }), (0, jsx_runtime_1.jsx)(ExamPart1_1.PersonCard, { person: teacher }), (0, jsx_runtime_1.jsx)(ExamPart1_1.PersonCard, { person: staff })] })] });\n    }\n}\nexports.App = App;\n\n\n//# sourceURL=webpack://webdev-exam/./src/App.tsx?");
+
+/***/ }),
+
+/***/ "./src/ExamPart1.tsx":
+/*!***************************!*\
+  !*** ./src/ExamPart1.tsx ***!
+  \***************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.PersonList = exports.fetchPersons = exports.PersonForm = exports.PersonCard = void 0;\nconst jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst emojis = {\n    \"student\": \"🎓\",\n    \"teacher\": \"🏫\",\n    \"staff\": \"🏢\"\n};\n// Question 1\nconst PersonCard = (props) => ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: (0, jsx_runtime_1.jsxs)(\"div\", { children: [`${emojis[props.person.role]} ${props.person.name} |`, props.person.role === \"student\" && (0, jsx_runtime_1.jsxs)(\"span\", { children: [\" Grade: \", props.person.grade] }), props.person.role === \"teacher\" && (0, jsx_runtime_1.jsxs)(\"span\", { children: [\" Subject: \", props.person.subject] }), props.person.role === \"staff\" && (0, jsx_runtime_1.jsxs)(\"span\", { children: [\" Department: \", props.person.department] })] }) }));\nexports.PersonCard = PersonCard;\n// Question 2\nclass PersonForm extends React.Component {\n    constructor(props) {\n        super(props);\n    }\n    render() {\n        return ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, {}));\n    }\n}\nexports.PersonForm = PersonForm;\n/*\nHint for the Dropdown list\n<select\n    onChange={}\n>\n    <option value=\"student\">Student</option>\n    <option value=\"teacher\">Teacher</option>\n    <option value=\"staff\">Staff</option>\n</select>\n*/\n// Question 3\nconst fetchPersons = async () => {\n    return {};\n};\nexports.fetchPersons = fetchPersons;\n// Question 4\nclass PersonList extends React.Component {\n    constructor(props) {\n        super(props);\n    }\n    render() {\n        return ((0, jsx_runtime_1.jsx)(\"div\", {}));\n    }\n}\nexports.PersonList = PersonList;\n\n\n//# sourceURL=webpack://webdev-exam/./src/ExamPart1.tsx?");
 
 /***/ }),
 
@@ -184,7 +194,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\ncons
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("1b4fa0785b14e64219ff")
+/******/ 		__webpack_require__.h = () => ("1babda58729ad31fbf62")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
