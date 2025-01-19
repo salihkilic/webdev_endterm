@@ -30,19 +30,17 @@ const emojis: Record<string, string> = {
 }
 
 // Question 1
-
 export const PersonCard = (props: { person: Person }): JSX.Element => (
     <>
         <div>{`${emojis[props.person.role]} ${props.person.name} |`}
-        {props.person.role === "student" && <span> Grade: {props.person.grade}</span>}
-        {props.person.role === "teacher" && <span> Subject: {props.person.subject}</span>}
-        {props.person.role === "staff" && <span> Department: {props.person.department}</span>}
+            {props.person.role === "student" && <span> Grade: {props.person.grade}</span>}
+            {props.person.role === "teacher" && <span> Subject: {props.person.subject}</span>}
+            {props.person.role === "staff" && <span> Department: {props.person.department}</span>}
         </div>
     </>
 )
 
 // Question 2
-
 export class PersonForm extends React.Component<{}, {}> {
     constructor(props: {}) {
         super(props)
