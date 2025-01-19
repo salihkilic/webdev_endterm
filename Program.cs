@@ -55,12 +55,12 @@ public interface IPerson
     public Guid Id { get; } //cigdem: added the id here 
     string Name { get; }
     string Role { get; }
-
+   
 }
 
 public class Student : IPerson
 {
-    public Guid Id { get; set; } //cigdem: added the id here 
+    public Guid Id { get; set;} //cigdem: added the id here 
     public string Name { get; set; }
     public int Grade { get; set; }
     public string Role => "student";
@@ -68,7 +68,7 @@ public class Student : IPerson
 
 public class Teacher : IPerson
 {
-    public Guid Id { get; set; } //cigdem: added the id here 
+    public Guid Id { get; set;} //cigdem: added the id here 
     public string Name { get; set; }
     public string Subject { get; set; }
     public string Role => "teacher";
@@ -76,7 +76,7 @@ public class Teacher : IPerson
 
 public class Staff : IPerson
 {
-    public Guid Id { get; set; } //cigdem: added the id here 
+    public Guid Id { get; set;} //cigdem: added the id here 
     public string Name { get; set; }
     public string Department { get; set; }
     public string Role => "staff";
